@@ -1,0 +1,455 @@
+/*
+ * Copyright © 2023  Information Aesthetics. All rights reserved.
+ * This work is licensed under the GPL2, V2 license.
+ */
+
+/*Set panel colors*/
+
+@namespace svg url(http://www.w3.org/2000/svg);
+
+/*///////////////////////////////////////////////////////////////////////////////*/
+/*DO NOT EDIT THESE*/
+/*Added to prevent text elements from being selected by the browser*/
+.IA_Designer_Main_SVG text {
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.IA_Designer_Main_SVG text::selection {
+    background: none;
+}
+
+.IA_Designer_Allow_Select text {
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+
+.IA_Designer_Allow_Select text::selection {
+    background-color: lightblue;
+}
+
+
+svg {
+    transform: translateZ(0);
+    will-change: contents;
+}
+
+body {
+    -webkit-font-smoothing: antialiased !important;
+    -webkit-tap-highlight-color: transparent;
+}
+/*END DO NOT EDIT*/
+/*///////////////////////////////////////////////////////////////////////////////*/
+
+
+.IA_Designer_Container, .IA_Presenter_Container {
+    position: relative;
+    background-color: #f8f8f8;
+    /*background-color: #ffffff;*/
+}
+
+.IA_Designer_Main_SVG {
+    /*position: relative;*/
+    top: 0;
+    z-index: 100;
+}
+
+.IA_Designer_Preamble{
+    z-index: 99;
+}
+
+.IA_Designer_Postamble{
+    z-index: 101;
+}
+
+.IA_Designer_Panel_Background {
+    fill: white;
+    opacity: 0;
+}
+
+.IA_Designer_Menu_Background {
+    fill: #b8bec7;
+    fill-opacity: .7;
+    /*fill: #eae9d7*/
+}
+
+/*.IA_Designer_darkcolor_fill{*/
+/*fill: white;*/
+/*}*/
+
+.IA_Designer_Bar_Background {
+    fill: #8e949d;
+}
+
+.IA_Designer_Tool_Panels {
+    fill: #b3d9d2;
+}
+
+.IA_Designer_Leftbar_Background {
+}
+
+.IA_Designer_Topbar_Background {
+    fill: #36383a;
+}
+
+.IA_Designer_Bottombar_Background {
+}
+
+.IA_Designer_Rightbar_Background {
+}
+
+.IA_Designer_Slider_Background {
+    fill: #edeff1;
+}
+
+.IA_Designer_Zoom_Slider {
+    fill: #b3d9d2;
+}
+
+.IA_Designer_Zoom_Handle {
+    fill: #939dd2
+}
+
+.IA_Designer_Vertical_Zoom_Handle {
+}
+
+.IA_Designer_Horizontal_Zoom_Handle {
+}
+
+/* The following need the ker word "!important" in order to work,
+ EX: fill:  #e8edfc !important;
+ */
+.IA_Designer_Controller_Panel_Background {
+    fill: #e8edfc !important;
+}
+
+.IA_Designer_Panel_Button_Background {
+}
+
+.IA_Designer_Column_Menu_Background {
+}
+
+.IA_Designer_Pre-load_Element {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.IA_Designer_MessageBox {
+    fill: whitesmoke;
+}
+
+.IA_Designer_MessageText {
+    fill: black;
+}
+
+.IA_Designer_MessageText_error {
+    fill: red;
+}
+
+.IA_Designer_MessageText_warning {
+    fill: orange;
+}
+
+/*Tooltip classes*/
+
+.IA_Designer_Tooltip_Background {
+    opacity: .6;
+}
+
+.IA_Designer_Tooltip_Text {
+}
+
+/*Alert Box classes*/
+.IA_Designer_Alert_Text{
+
+}
+.IA_Designer_Alert_Background{
+    fill: ghostwhite !important;
+}
+.IA_Designer_Alert_Prompt_Text{
+
+}
+.IA_Designer_Alert_Prompt_Background{
+    fill: grey !important;
+    opacity: .1 !important;
+}
+
+/*Library classes*/
+
+.IA_Designer_Library_Checkmark_Mouseover {
+    fill: #dbe098
+}
+
+.IA_Designer_Library_Checkmark_Press {
+    fill: #c1f1c1;
+}
+
+/*Textbox classes*/
+
+.IA_Designer_textbox_highlight {
+    stroke: red !important;
+    stroke-width: 3px !important;
+    stroke-opacity: 1 !important;
+}
+
+.IA_Designer_form_highlight {
+    border: 2px solid red !important;
+}
+
+/*links*/
+svg|a:link, svg|a:visited {
+    cursor: pointer;
+}
+
+svg|a:hover, svg|a:active {
+    outline: solid 1px pink;
+}
+
+.IA_Designer_Link {
+    cursor: pointer;
+    pointer-events: fill;
+}
+
+.IA_Designer_Link text{
+    cursor: pointer;
+}
+.IA_Designer_Link:hover {
+    filter: "url(#IA_Designer_button_press_filter)";
+    /*outline: solid 1px pink;*/
+}
+
+/*iframes*/
+
+.IA_Designer_html_frame {
+    border: none;
+}
+
+/*widget defaults*/
+.IA_Designer_Input_Table_Background {
+    stroke: blue;
+    fill: Wheat;
+    fill-opacity: .5
+}
+
+.IA_Designer_Input_Table_Button {
+    stroke: blue;
+    fill: green;
+    fill-opacity: .7
+}
+
+.IA_Designer_Form_Field {
+    stroke: none;
+    fill: white;
+    opacity: .9
+}
+
+.IA_Designer_Column_Menu_Background {
+    fill: white
+}
+
+.IA_Designer_Column_Menu_Row {
+    fill: white;
+    opacity: 0
+}
+
+.IA_Designer_Menu_Font {
+    font-family: "Times New Roman", Georgia, serif;
+    font-size: 14px
+}
+
+.IA_Designer_Scrollbox_Slider {
+    fill: lightgray;
+    stroke: darkgray;
+    stroke-width: 1px;
+    opacity: .5
+}
+
+.IA_Designer_Slider_Body {
+    fill: white;
+    stroke-width: .5px;
+    stroke: black
+}
+
+.IA_Designer_Slider_Body_Background {
+}
+
+.IA_Designer_Slider_Head {
+    fill: firebrick;
+    stroke-width: .5px;
+    stroke: green;
+    opacity: 1
+}
+
+.IA_Designer_Slider_Increment_Markers {
+    stroke: red;
+    stroke-width: .5px;
+    opacity: .5
+}
+
+.IA_Designer_Slider_Increment_Label_Text {
+}
+
+.IA_Designer_Slider_Label_Text {
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 12px;
+}
+
+.IA_Designer_Slider_Title_Text {
+    font-family: Monaco, monospace;
+    font-size: 1vw;
+}
+
+/*//cursors//*/
+
+.IA_Designer_Cursor_alias {
+    cursor: alias;
+}
+
+.IA_Designer_Cursor_all-scroll {
+    cursor: all-scroll;
+}
+
+.IA_Designer_Cursor_auto {
+    cursor: auto;
+}
+
+.IA_Designer_Cursor_cell {
+    cursor: cell;
+}
+
+.IA_Designer_Cursor_context-menu {
+    cursor: context-menu;
+}
+
+.IA_Designer_Cursor_col-resize {
+    cursor: col-resize;
+}
+
+.IA_Designer_Cursor_copy {
+    cursor: copy;
+}
+
+.IA_Designer_Cursor_crosshair {
+    cursor: crosshair;
+}
+
+.IA_Designer_Cursor_default {
+    cursor: default;
+}
+
+.IA_Designer_Cursor_e-resize {
+    cursor: e-resize;
+}
+
+.IA_Designer_Cursor_ew-resize {
+    cursor: ew-resize;
+}
+
+.IA_Designer_Cursor_grab {
+    cursor: grab;
+}
+
+.IA_Designer_Cursor_grabbing {
+    cursor: grabbing;
+}
+
+.IA_Designer_Cursor_help {
+    cursor: help;
+}
+
+.IA_Designer_Cursor_move {
+    cursor: move;
+}
+
+.IA_Designer_Cursor_n-resize {
+    cursor: n-resize;
+}
+
+.IA_Designer_Cursor_ne-resize {
+    cursor: ne-resize;
+}
+
+.IA_Designer_Cursor_nesw-resize {
+    cursor: nesw-resize;
+}
+
+.IA_Designer_Cursor_ns-resize {
+    cursor: ns-resize;
+}
+
+.IA_Designer_Cursor_nw-resize {
+    cursor: nw-resize;
+}
+
+.IA_Designer_Cursor_nwse-resize {
+    cursor: nwse-resize;
+}
+
+.IA_Designer_Cursor_no-drop {
+    cursor: no-drop;
+}
+
+.IA_Designer_Cursor_none {
+    cursor: none;
+}
+
+.IA_Designer_Cursor_not-allowed {
+    cursor: not-allowed;
+}
+
+.IA_Designer_Cursor_pointer {
+    cursor: pointer;
+}
+
+.IA_Designer_Cursor_progress {
+    cursor: progress;
+}
+
+.IA_Designer_Cursor_row-resize {
+    cursor: row-resize;
+}
+
+.IA_Designer_Cursor_s-resize {
+    cursor: s-resize;
+}
+
+.IA_Designer_Cursor_se-resize {
+    cursor: se-resize;
+}
+
+.IA_Designer_Cursor_sw-resize {
+    cursor: sw-resize;
+}
+
+.IA_Designer_Cursor_text {
+    cursor: text;
+}
+
+.IA_Designer_Cursor_w-resize {
+    cursor: w-resize;
+}
+
+.IA_Designer_Cursor_wait {
+    cursor: wait;
+}
+
+.IA_Designer_Cursor_zoom-in {
+    cursor: zoom-in;
+}
+
+.IA_Designer_Cursor_zoom-out {
+    cursor: zoom-out;
+}
+
+.IA_Designer_Ignore_Click {
+    cursor: default;
+}
+
+.IA_Designer_Inactive_Button{
+    cursor: auto !important;
+}

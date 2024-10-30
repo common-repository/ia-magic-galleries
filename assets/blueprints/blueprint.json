@@ -1,0 +1,26 @@
+{
+  "landingPage": "/wp-admin/admin.php?page=iamg-overview-page",
+  "preferredVersions": {
+    "php": "8.0",
+    "wp": "latest"
+  },
+  "phpExtensionBundles": ["kitchen-sink"],
+  "features": {
+    "networking": true
+  },
+  "steps": [
+    {
+      "step": "login"
+    },
+    {
+      "step": "installPlugin",
+      "pluginZipFile": {
+        "resource": "wordpress.org/plugins",
+        "slug": "ia-magic-galleries"
+      },
+      "options": {
+        "activate": true
+      }
+    }
+  ]
+}

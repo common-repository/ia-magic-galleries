@@ -1,0 +1,4 @@
+/*! JSON.minify()
+	v0.1 (c) Kyle Simpson
+	MIT License
+*/ !function(n){void 0!==n.JSON&&n.JSON||(n.JSON={}),n.JSON.minify=function(n){var t,$,e,r,i=/"|(\/\*)|(\*\/)|(\/\/)|\n|\r/g,s=!1,o=!1,g=!1,a=[],l=0,_=0;for(i.lastIndex=0;t=i.exec(n);)e=RegExp.leftContext,r=RegExp.rightContext,o||g||($=e.substring(_),s||($=$.replace(/(\n|\r|\s)*/g,"")),a[l++]=$),_=i.lastIndex,'"'!=t[0]||o||g?"/*"!=t[0]||s||o||g?"*/"!=t[0]||s||!o||g?"//"!=t[0]||s||o||g?"\n"!=t[0]&&"\r"!=t[0]||s||o||!g?o||g||/\n|\r|\s/.test(t[0])||(a[l++]=t[0]):g=!1:g=!0:o=!1:o=!0:($=e.match(/(\\)*$/),s&&$&&$[0].length%2!=0||(s=!s),_--,r=n.substring(_));return(g||(a[l++]=r),1===a.length&&void 0==a[0])?(JSON.parse(n),n):a.join("")}}(this);

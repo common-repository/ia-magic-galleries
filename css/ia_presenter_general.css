@@ -1,0 +1,426 @@
+/*Set panel colors*/
+@namespace svg url(http://www.w3.org/2000/svg);
+
+/*///////////////////////////////////////////////////////////////////////////////*/
+/*DO NOT EDIT THESE*/
+/*Added to prevent text elements from being selected by the browser*/
+.IA_Designer_Main_SVG text {
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.IA_Designer_Main_SVG text::selection {
+    background: none;
+}
+
+/*svg {*/
+/*transform: translateZ(0);*/
+/*}*/
+/*END DO NOT EDIT*/
+/*///////////////////////////////////////////////////////////////////////////////*/
+
+
+
+.IA_Designer_Container, .IA_Presenter_Container {
+    /*background-color: #f8f8f8;*/
+    /*background-color: #ffffff;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.IA_Designer_Main_SVG {
+    /*position:relative !important;*/
+    top: 0;
+    /*z-index: 100;*/
+}
+
+.IA_Designer_Panel_Background {
+    /*fill: white;*/
+    /*fill: #eae9d7*/
+    fill-opacity: 0;
+}
+
+.IA_Designer_Menu_Background {
+    fill: #b8bec7;
+    fill-opacity: .7;
+    /*fill: #eae9d7*/
+}
+
+/*.IA_Designer_darkcolor_fill{*/
+/*fill: white;*/
+/*}*/
+
+.IA_Designer_Bar_Background {
+    fill: #8e949d;
+}
+
+.IA_Designer_Tool_Panels {
+    fill: #b3d9d2;
+}
+
+.IA_Designer_Leftbar_Background {
+}
+
+.IA_Designer_Topbar_Background {
+    fill: #36383a;
+}
+
+.IA_Designer_Bottom_Bar_Background {
+}
+
+.IA_Designer_Right_Bar_Background {
+}
+
+.IA_Designer_Slider_Background {
+    fill: #edeff1;
+}
+
+.IA_Designer_Zoom_Slider {
+    fill: #b3d9d2;
+}
+
+.IA_Designer_Zoom_Handle {
+    fill: #939dd2
+}
+
+.IA_Designer_Vertical_Zoom_Handle {
+}
+
+.IA_Designer_Horizontal_Zoom_Handle {
+}
+
+/*Message box classes*/
+.IA_Designer_MessageBox {
+    fill: whitesmoke;
+}
+
+.IA_Designer_MessageText {
+    fill: black;
+}
+
+.IA_Designer_MessageText_error {
+    fill: red;
+}
+
+.IA_Designer_MessageText_warning {
+    fill: orange;
+}
+
+/*Tooltip classes*/
+
+.IA_Designer_Tooltip_Background {
+    opacity: .6;
+    rx: 4
+}
+
+.IA_Designer_Tooltip_Text {
+}
+
+/*Alert Box classes*/
+.IA_Designer_Alert_Text {
+    font-family: Jaldi-Regular, Jaldi, serif !important;
+}
+
+.IA_Designer_Alert_Background {
+    fill: #d0f2fc !important;
+    rx: 5px;
+    ry: 5px;
+}
+
+.IA_Designer_Alert_Prompt_Text {
+    font-family: Jaldi-Regular, Jaldi, serif;
+}
+
+.IA_Designer_Alert_Prompt_Background {
+    fill: #14c0ef !important;
+    opacity: .5 !important;
+    rx: 5px;
+    ry: 5px;
+}
+
+
+/* The following need the key word "!important" in order to work,
+ EX: fill:  #e8edfc !important;
+ */
+.IA_Designer_Controller_Panel_Background {
+    fill: #e8edfc !important;
+    /*opacity: 0 ;!important;*/
+}
+
+.IA_Designer_Panel_Button_Background {
+}
+
+.IA_Designer_Column_Menu_Background {
+}
+
+.IA_Designer_Pre-load_Element {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.IA_Designer_Full_Width {
+    /*position: relative;*/
+    width: 100vw;
+    /*left: 50%;*/
+    /*right: 50%;*/
+    /*margin-left: -50vw !important;*/
+    /*margin-right: -50vw !important;*/
+    /*max-width: 100vw !important;*/
+}
+
+IA_Designer_Input_Table_Background {
+    stroke: blue;
+    fill: Wheat;
+    fill-opacity: .5
+}
+
+.IA_Designer_Input_Table_Button {
+    stroke: blue;
+    fill: green;
+    fill-opacity: .7
+}
+
+.IA_Designer_Form_Field {
+    stroke: none;
+    fill: white;
+    opacity: .9
+}
+
+.IA_Designer_Column_Menu_Background {
+    fill: white
+}
+
+.IA_Designer_Column_Menu_Row {
+    fill: white;
+    opacity: 0
+}
+
+.IA_Designer_Menu_Font {
+    font-family: Jaldi-Regular, Georgia, serif;
+    font-size: 14px
+}
+
+
+.IA_Designer_Scrollbox_Slider {
+    fill: lightgray;
+    stroke: darkgray;
+    stroke-width: 1px;
+    opacity: .5
+}
+
+.IA_Designer_Slider_Body {
+    fill: white;
+    stroke-width: .5px;
+    stroke: black
+}
+
+/*pointer*/
+
+.IA_Designer_Pointer_Ignore {
+    pointer-events: none !important;
+}
+/*Opacity*/
+.IA_Designer_OP_0 {
+    opacity: 0;
+}
+
+.IA_Designer_OP_10 {
+    opacity: .1;
+}
+
+.IA_Designer_OP_20 {
+    opacity: .2;
+}
+
+.IA_Designer_OP_30 {
+    opacity: .3;
+}
+
+.IA_Designer_OP_40 {
+    opacity: .4;
+}
+
+.IA_Designer_OP_50 {
+    opacity: .5;
+}
+
+.IA_Designer_OP_60 {
+    opacity: .6;
+}
+
+.IA_Designer_OP_70 {
+    opacity: .7;
+}
+
+.IA_Designer_OP_80 {
+    opacity: .8;
+}
+
+.IA_Designer_OP_90 {
+    opacity: .9;
+}
+
+.IA_Designer_OP_100 {
+    opacity: 1;
+}
+
+.IA_Designer_OP_Trans {
+    transition: opacity 1s;
+}
+
+.IA_Designer_Hide {
+    display: none;
+}
+
+/*//cursors//*/
+
+.IA_Designer_Cursor_alias {
+    cursor: alias;
+}
+
+.IA_Designer_Cursor_all-scroll {
+    cursor: all-scroll;
+}
+
+.IA_Designer_Cursor_auto {
+    cursor: auto;
+}
+
+.IA_Designer_Cursor_cell {
+    cursor: cell;
+}
+
+.IA_Designer_Cursor_context-menu {
+    cursor: context-menu;
+}
+
+.IA_Designer_Cursor_col-resize {
+    cursor: col-resize;
+}
+
+.IA_Designer_Cursor_copy {
+    cursor: copy;
+}
+
+.IA_Designer_Cursor_crosshair {
+    cursor: crosshair;
+}
+
+.IA_Designer_Cursor_default {
+    cursor: default;
+}
+
+.IA_Designer_Cursor_e-resize {
+    cursor: e-resize;
+}
+
+.IA_Designer_Cursor_ew-resize {
+    cursor: ew-resize;
+}
+
+.IA_Designer_Cursor_grab {
+    cursor: grab;
+}
+
+.IA_Designer_Cursor_grabbing {
+    cursor: grabbing;
+}
+
+.IA_Designer_Cursor_help {
+    cursor: help;
+}
+
+.IA_Designer_Cursor_move {
+    cursor: move;
+}
+
+.IA_Designer_Cursor_n-resize {
+    cursor: n-resize;
+}
+
+.IA_Designer_Cursor_ne-resize {
+    cursor: ne-resize;
+}
+
+.IA_Designer_Cursor_nesw-resize {
+    cursor: nesw-resize;
+}
+
+.IA_Designer_Cursor_ns-resize {
+    cursor: ns-resize;
+}
+
+.IA_Designer_Cursor_nw-resize {
+    cursor: nw-resize;
+}
+
+.IA_Designer_Cursor_nwse-resize {
+    cursor: nwse-resize;
+}
+
+.IA_Designer_Cursor_no-drop {
+    cursor: no-drop;
+}
+
+.IA_Designer_Cursor_none {
+    cursor: none;
+}
+
+.IA_Designer_Cursor_not-allowed {
+    cursor: not-allowed;
+}
+
+.IA_Designer_Cursor_pointer {
+    cursor: pointer;
+}
+
+.IA_Designer_Cursor_progress {
+    cursor: progress;
+}
+
+.IA_Designer_Cursor_row-resize {
+    cursor: row-resize;
+}
+
+.IA_Designer_Cursor_s-resize {
+    cursor: s-resize;
+}
+
+.IA_Designer_Cursor_se-resize {
+    cursor: se-resize;
+}
+
+.IA_Designer_Cursor_sw-resize {
+    cursor: sw-resize;
+}
+
+.IA_Designer_Cursor_text {
+    cursor: text;
+}
+
+.IA_Designer_Cursor_w-resize {
+    cursor: w-resize;
+}
+
+.IA_Designer_Cursor_wait {
+    cursor: wait;
+}
+
+.IA_Designer_Cursor_zoom-in {
+    cursor: zoom-in;
+}
+
+.IA_Designer_Cursor_zoom-out {
+    cursor: zoom-out;
+}
+
+.IA_Designer_Ignore_Click {
+    cursor: default;
+}
+
